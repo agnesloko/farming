@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FruitFix Farm Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #f39c12;
+            animation: navbarColorChange 5s linear infinite;
+        }
+
+        .navbar-brand img {
+            height: 60px;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-size: 18px;
+            transition: color 0.6s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #333 !important;
+            background-color: grey;
+        }
+
+        @keyframes navbarColorChange {
+            0% {
+                background-color: #f39c12;
+            }
+            50% {
+                background-color: orange;
+            }
+            100% {
+                background-color: grey;
+            }
+        }
+        .blog-header {
+            background: url('farm-blog-bg.jpg') no-repeat center center/cover;
+            color: black;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .blog-header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .blog-header p {
+            font-size: 1.2rem;
+        }
+        .blog-post {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        .blog-post img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .blog-post .content {
+            padding: 20px;
+        }
+        .blog-post .content h5 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2b6c2e; /* Green color */
+        }
+        .blog-post .content p {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+        .blog-post .content a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: 600;
+        }
+        .blog-post .content a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            padding: 40px 0;
+        }
+
+        .footer-title {
+            font-size: 1.25rem;
+            color: pink;
+            margin-bottom: 20px;
+        }
+
+        .social-icons a {
+            color: pink;
+            margin-right: 15px;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: white;
+        }
+
+        .footer-line {
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .footer-row p {
+            margin: 0;
+        }
+
+        .footer-row a {
+            color: pink;
+            text-decoration: none;
+        }
+
+        .footer-row a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            color: white;
+        }
+
+        .year {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Fruitfix Logo"> Fruitfix</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="product.php">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="Teams.html">Teams</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <div class="blog-header">
+        <h1>Welcome to the FruitFix Farm Blog</h1>
+        <p>Explore the world of fresh, organic fruits and sustainable farming practices.</p>
+    </div>
+
+    <!-- Blog Posts -->
+    <div class="container py-5">
+        <div class="row">
+            <!-- Blog Post 1 -->
+            <div class="col-md-4">
+                <div class="blog-post">
+                    <img src="images/seasonal.jpg" alt="Seasonal Fruits">
+                    <div class="content">
+                        <h5>Seasonal Fruits You Should Try</h5>
+                        <p>Discover the fresh fruits in season and their amazing benefits for your health.</p>
+                        <a href="seasonal-fruits.php">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Post 2 -->
+            <div class="col-md-4">
+                <div class="blog-post">
+                    <img src="images/healthbenefit.jpg" alt="Health Benefits">
+                    <div class="content">
+                        <h5>Top 5 Fruits for Better Health</h5>
+                        <p>Learn how fruits like mangoes and berries can transform your well-being.</p>
+                        <a href="health-benefits.php">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Post 3 -->
+            <div class="col-md-4">
+                <div class="blog-post">
+                    <img src="images/behindscene.jpg" alt="Behind the Scenes">
+                    <div class="content">
+                        <h5>A Day at FruitFix Farm</h5>
+                        <p>Get a sneak peek into our farm's daily operations and sustainable practices.</p>
+                        <a href="behind-the-scenes.php">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row footer-row">
+                <div class="col-md-4">
+                    <h5 class="footer-title">Contact Details</h5>
+                    <p>Email: lokoagness25@gmail.com<br>justusmwendwa022@gmail.com</p>
+                    <p>Phone: 0704304222/0115998400</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer-title">Address</h5>
+                    <p> Wote - Makueni, Kenya</p>
+                    <p> P.O BOX 78 – 90300</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer-title">Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-line"></div>
+            <p class="text-center copyright">&copy; <span class="year">2025</span> Your Organization. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Update year dynamically
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ddd01b;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #f39c12;
+            animation: navbarColorChange 5s linear infinite;
+        }
+
+        .navbar-brand img {
+            height: 60px;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-size: 18px;
+            transition: color 0.6s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #333 !important;
+            background-color: grey;
+        }
+
+        @keyframes navbarColorChange {
+            0% {
+                background-color: #f39c12;
+            }
+            50% {
+                background-color: orange;
+            }
+            100% {
+                background-color: grey;
+            }
+        }
+
+        .about-img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 3px solid pink;
+        }
+
+        .section-title {
+            color: pink;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .btn-read-more {
+            background-color: pink;
+            color: #fff;
+            border: none;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-read-more:hover {
+            background-color: #e60073;
+        }
+
+        .row h2, .row h3 {
+            color: #f39c12;
+            font-weight: bold;
+        }
+
+        .row p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* Cards for Goals */
+        .card-deck .card {
+            margin: 15px;
+            border: 2px solid #f39c12;
+        }
+
+        .card-title {
+            color: #f39c12;
+            font-weight: bold;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: black;
+            color: white;
+            padding: 40px 0;
+        }
+
+        .footer-title {
+            font-size: 1.25rem;
+            color: pink;
+            margin-bottom: 20px;
+        }
+       .footer-title p{
+        color:#fff
+       }
+        .social-icons a {
+            color: pink;
+            margin-right: 15px;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: white;
+        }
+
+        .footer-line {
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .footer-row p {
+            margin: 0;
+        }
+
+        .footer-row a {
+            color: pink;
+            text-decoration: none;
+        }
+
+        .footer-row a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            color: white;
+        }
+
+        .year {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Fruitfix Logo"> Fruitfix</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="product.php">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="Teams.html">Teams</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <h1 class="section-title">About Us</h1>
+
+        <!-- Brief History -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <img src="images/homepage image.jpg" alt="About Us" class="about-img">
+            </div>
+            <div class="col-md-6">
+                <h2>Brief History</h2>
+               
+             <p>Our organization was established with the mission of empowering communities and providing innovative solutions to modern-day challenges.<br>Over the years, we have grown to become a trusted name in our field, driven by our commitment to excellence and passion for making a difference.</p>
+
+                <button class="btn btn-read-more" onclick="window.location.href='technology_info.html'">Read More</button>
+            </div>
+        </div>
+        
+
+        <!-- Technology Section (Separate Section) -->
+        <div class="row mb-5">
+            <div class="col-md-12">
+                <h2 class="section-title">Technology & Innovation</h2>
+                <p>We embrace cutting-edge technology to revolutionize the way we engage with fruits. From advanced farming techniques like hydroponics and vertical farming, to utilizing AI in crop monitoring, we are ensuring a sustainable future for fruit production. Our goal is to combine nature's finest with the latest technological advancements to create a smarter, more efficient food system. Technology drives our commitment to quality and sustainability.</p>
+            </div>
+        </div>
+
+        <!-- Goals Section (Cards) -->
+        <div class="row text-center mb-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Our Goals</h5>
+                        <p class="card-text">To create a positive impact through sustainable practices and empower individuals to achieve their full potential.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Our Mission</h5>
+                        <p class="card-text">To innovate and lead by example, providing top-quality products and services that inspire growth and success.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Our Vision</h5>
+                        <p class="card-text">To be a global leader, recognized for our commitment to excellence, innovation, and social responsibility.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row footer-row">
+                <div class="col-md-4">
+                    <h5 class="footer-title">Contact Details</h5>
+                    <p>Email: lokoagness25@gmail.com<br>justusmwendwa022@gmail.com</p>
+                    <p>Phone: 0704304222/0115998400</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer-title">Address</h5>
+                    <p> Wote - Makueni, Kenya</p>
+                    <p> P.O BOX 78 – 90300</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer-title">Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-line"></div>
+            <p class="text-center copyright">&copy; <span class="year">2025</span> Your Organization. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // Update year dynamically
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
